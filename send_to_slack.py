@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #############
 # 사전 설치
 ##############
@@ -9,9 +8,7 @@ import jenkins
 import json
 import requests 
 import sys
- 
-reload(sys)
-sys.setdefaultencoding('utf-8')
+
  
 server_url = '' # ex) http://jenkinskorea.jenkins.org
 user = '' # ex) admin
@@ -24,7 +21,7 @@ job_name = 'sonarqube-demo'
 build_num = 1
 console_output = server.get_build_console_output(job_name, build_num)
  
-print('*' * 200)
+print '*' * 200
 print(console_output)
 print('*' * 200)
  
