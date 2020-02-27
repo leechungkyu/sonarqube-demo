@@ -15,7 +15,7 @@ repo_name = 'helloworld-20190220'
  
 # 삭제할 명령어 # https://api.github.com/repos/<github_id>/<repo_name>
 cmd = "curl -X DELETE -H \'Authorization: token " + github_token + "\' " + "https://api.github.com/repos/leechungkyu/" + repo_name
-print cmd
+print(cmd)
  
 # 삭제 실행
-print os.system(cmd)
+print(os.system(cmd))
